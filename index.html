@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Premium Sites</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- Giriş -->
+
+<div id="loginScreen">
+
+    <div class="loginBox">
+
+        <h1>Premium Sites</h1>
+
+        <input
+            type="text"
+            id="firstName"
+            placeholder="Ad">
+
+        <input
+            type="text"
+            id="lastName"
+            placeholder="Soyad">
+
+        <button id="continueBtn">
+            Davam et
+        </button>
+
+    </div>
+
+</div>
+
+<!-- Əsas sayt -->
+
+<div id="app" style="display:none;">
+
+<header>
+
+<div class="left">
+
+<div id="profile">
+FM
+</div>
+
+<div id="profileName">
+İstifadəçi
+</div>
+
+</div>
+
+<div id="menuButton">
+☰
+</div>
+
+</header>
+
+<!-- Menyu -->
+
+<div id="menu">
+
+<button id="adminLogin">
+🔒 Admin girişi
+</button>
+
+<button id="logout">
+🚪 Hesabdan çıxış
+</button>
+
+</div>
+
+<main>
+
+<input
+type="text"
+id="search"
+placeholder="🔍 Axtarış...">
+
+<div id="cards">
+
+</div>
+
+</main>
+
+<button id="addButton">
++
+</button><!-- Kart əlavə etmə paneli -->
+
+<div id="addPanel" style="display:none;">
+
+    <div class="panel">
+
+        <h2>Yeni Kart</h2>
+
+        <input
+            type="text"
+            id="siteTitle"
+            placeholder="Sayt adı">
+
+        <input
+            type="file"
+            id="siteImage"
+            accept="image/*">
+
+        <textarea
+            id="siteDescription"
+            placeholder="Açıqlama"></textarea>
+
+        <textarea
+            id="siteHTML"
+            placeholder="HTML kodu"></textarea>
+
+        <textarea
+            id="siteCSS"
+            placeholder="CSS kodu"></textarea>
+
+        <textarea
+            id="siteJS"
+            placeholder="JavaScript kodu"></textarea>
+
+        <div class="panelButtons">
+
+            <button id="saveCard">
+                💾 Yadda saxla
+            </button>
+
+            <button id="closePanel">
+                ❌ Bağla
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Kartı açmaq üçün pəncərə -->
+
+<div id="viewer" style="display:none;">
+
+    <div id="viewerHeader">
+
+        <button id="backButton">
+            ← Geri
+        </button>
+
+    </div>
+
+    <iframe id="siteFrame"></iframe>
+
+</div></div>
+
+<script src="game.js"></script>
+
+</body>
+</html>
